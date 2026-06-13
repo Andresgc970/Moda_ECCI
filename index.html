@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moda ECCI — Conferencia de Color | Universidad ECCI</title>
+  <meta name="description" content="Cobertura de la conferencia de color dictada por Sara Viloria en la Universidad ECCI, sede Centro, Bogotá.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===========================================================
+       NAVBAR (Bootstrap Navbar)
+  =========================================================== -->
+  <header class="navbar-custom" id="top">
+    <div class="nav-container">
+      <a href="#top" class="logo">Moda<span>ECCI</span></a>
+
+      <nav>
+        <ul class="nav-links" id="mainNavLinks">
+          <li><a href="#sobre-evento"   data-i18n="nav_about">El evento</a></li>
+          <li><a href="#experiencia"    data-i18n="nav_experience">Mi experiencia</a></li>
+          <li><a href="#teoria-color"   data-i18n="nav_color">Teoría del color</a></li>
+          <li><a href="#glosario"       data-i18n="nav_glossary">Glosario</a></li>
+          <li><a href="#sostenibilidad" data-i18n="nav_sustain">Sostenibilidad</a></li>
+          <li><a href="#galeria"        data-i18n="nav_gallery">Galería</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-toggle">
+        <button data-lang="es" class="active">ES</button>
+        <button data-lang="en">EN</button>
+      </div>
+
+      <button class="nav-toggle" aria-label="Abrir menú" id="navToggleBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===========================================================
+       HERO
+  =========================================================== -->
+  <section class="hero" id="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="eyebrow" data-i18n="hero_eyebrow">Universidad ECCI · Bogotá</span>
+        <h1>
+          <span data-i18n="hero_title_1">Moda</span>
+          <span class="accent" data-i18n="hero_title_2">ECCI</span>
+        </h1>
+        <p data-i18n="hero_subtitle">
+          Una conferencia sobre color, percepción y diseño, a cargo de Sara Viloria
+          en el campus de la Universidad ECCI, sede Centro, Bogotá.
+        </p>
+
+        <div class="hero-meta">
+          <div>
+            <strong data-i18n="hero_meta_speaker_value">Sara Viloria</strong>
+            <span data-i18n="hero_meta_speaker_label">Conferencista</span>
+          </div>
+          <div>
+            <strong data-i18n="hero_meta_place_value">ECCI · Sede Centro, Bogotá</strong>
+            <span data-i18n="hero_meta_place_label">Lugar</span>
+          </div>
+          <div>
+            <strong data-i18n="hero_meta_topic_value">Color y percepción</strong>
+            <span data-i18n="hero_meta_topic_label">Tema central</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#sobre-evento" class="btn-primary-custom" data-i18n="hero_cta">Explorar el evento</a>
+        </div>
+      </div>
+
+      <div class="klee-grid" aria-hidden="true">
+        <div class="cell c1" style="animation-delay:0.05s"></div>
+        <div class="cell c2" style="animation-delay:0.10s"></div>
+        <div class="cell c5" style="animation-delay:0.15s"></div>
+        <div class="cell c3" style="animation-delay:0.20s"></div>
+        <div class="cell c4" style="animation-delay:0.10s"></div>
+        <div class="cell c1" style="animation-delay:0.15s"></div>
+        <div class="cell c2" style="animation-delay:0.20s"></div>
+        <div class="cell c6" style="animation-delay:0.25s"></div>
+        <div class="cell c3" style="animation-delay:0.15s"></div>
+        <div class="cell c5" style="animation-delay:0.20s"></div>
+        <div class="cell c1" style="animation-delay:0.25s"></div>
+        <div class="cell c2" style="animation-delay:0.30s"></div>
+        <div class="cell c6" style="animation-delay:0.20s"></div>
+        <div class="cell c4" style="animation-delay:0.25s"></div>
+        <div class="cell c2" style="animation-delay:0.30s"></div>
+        <div class="cell c1" style="animation-delay:0.35s"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Alert: Bienvenida -->
+  <div class="alert-wrapper">
+    <div class="alert alert-custom alert-dismissible fade show" role="alert" id="welcomeAlert">
+      <span data-i18n="alert_text">🎨 Sitio bilingüe — cambia el idioma arriba a la derecha · ES / EN</span>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <!-- ===========================================================
+       SOBRE EL EVENTO
+  =========================================================== -->
+  <section id="sobre-evento" class="about section-pad">
+    <div class="container-custom">
+      <!-- Bootstrap Cards grid -->
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="about-card reveal h-100">
+            <span class="eyebrow" data-i18n="about_eyebrow" style="color:var(--color-accent-yellow);">Sobre la charla</span>
+            <h3 data-i18n="about_title">El color como lenguaje</h3>
+            <p data-i18n="about_p1">La conferencia exploró el color desde la mirada de Paul Klee, artista que entendió el color no solo como atributo visual, sino como estructura emocional y compositiva. A partir de ahí, se recorrió la historia de los pigmentos: cómo materiales naturales y procesos químicos definieron las paletas disponibles a lo largo de la historia del arte y del diseño.</p>
+            <p data-i18n="about_p2">También se abordaron herramientas fundamentales para cualquier persona que trabaje con imágenes: el círculo cromático, las armonías de color, la psicología detrás de cada tono y dos enfoques complementarios para estudiar el color, la intuición y el contraste.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="reveal">
+            <h3 class="topics-heading" data-i18n="topics_title">Temas tratados</h3>
+            <!-- Bootstrap Accordion -->
+            <div class="accordion accordion-custom" id="topicsAccordion">
+
+              <div class="accordion-item acc-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topic1c" aria-expanded="false">
+                    <span class="topic-dot" style="background:var(--color-accent-red)"></span>
+                    <span data-i18n="topic1">Color según Paul Klee</span>
+                  </button>
+                </h2>
+                <div id="topic1c" class="accordion-collapse collapse" data-bs-parent="#topicsAccordion">
+                  <div class="accordion-body acc-body"><p data-i18n="topic1_desc">Paul Klee veía el color como una estructura con peso, ritmo y emoción propia, no solo como relleno visual. Su obra mostró cómo bloques de color organizados en cuadrículas pueden transmitir sensaciones y construir composiciones equilibradas, una idea que inspiró la identidad visual de este proyecto.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item acc-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topic2c" aria-expanded="false">
+                    <span class="topic-dot" style="background:var(--color-accent-yellow)"></span>
+                    <span data-i18n="topic2">Historia de los pigmentos</span>
+                  </button>
+                </h2>
+                <div id="topic2c" class="accordion-collapse collapse" data-bs-parent="#topicsAccordion">
+                  <div class="accordion-body acc-body"><p data-i18n="topic2_desc">Desde tierras y minerales molidos hasta los pigmentos sintéticos modernos, cada época estuvo limitada (o impulsada) por los materiales disponibles. Conocer este recorrido ayuda a entender por qué ciertos colores fueron raros, costosos o simbólicos, y cómo eso moldeó el arte y el diseño.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item acc-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topic3c" aria-expanded="false">
+                    <span class="topic-dot" style="background:var(--color-accent-blue)"></span>
+                    <span data-i18n="topic3">Círculo cromático</span>
+                  </button>
+                </h2>
+                <div id="topic3c" class="accordion-collapse collapse" data-bs-parent="#topicsAccordion">
+                  <div class="accordion-body acc-body"><p data-i18n="topic3_desc">Es el mapa base de todo el trabajo con color: organiza los tonos según su relación entre sí (primarios, secundarios, terciarios) y permite predecir cómo se comportarán al combinarse. Es la herramienta de partida para crear cualquier paleta con intención.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item acc-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topic4c" aria-expanded="false">
+                    <span class="topic-dot" style="background:var(--color-dark)"></span>
+                    <span data-i18n="topic4">Armonías del color</span>
+                  </button>
+                </h2>
+                <div id="topic4c" class="accordion-collapse collapse" data-bs-parent="#topicsAccordion">
+                  <div class="accordion-body acc-body"><p data-i18n="topic4_desc">A partir del círculo cromático surgen combinaciones con propósito: complementarios para generar contraste, análogos para crear calma y cohesión, o triádicos para lograr equilibrio dinámico. Elegir una armonía es decidir qué sensación tendrá el diseño antes de elegir un solo color.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item acc-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topic5c" aria-expanded="false">
+                    <span class="topic-dot" style="background:var(--color-ink)"></span>
+                    <span data-i18n="topic5">Psicología del color</span>
+                  </button>
+                </h2>
+                <div id="topic5c" class="accordion-collapse collapse" data-bs-parent="#topicsAccordion">
+                  <div class="accordion-body acc-body"><p data-i18n="topic5_desc">Cada color comunica algo antes de que se lea una sola palabra: el rojo activa, el azul calma, el amarillo llama la atención. La conferencia recordó que esa lectura no es solo subjetiva, también depende del contexto cultural y del medio en que se presenta el color.</p></div>
+                </div>
+              </div>
+
+              <div class="accordion-item acc-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button acc-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#topic6c" aria-expanded="false">
+                    <span class="topic-dot" style="background:var(--color-accent-red)"></span>
+                    <span data-i18n="topic6">Intuición y contrastes</span>
+                  </button>
+                </h2>
+                <div id="topic6c" class="accordion-collapse collapse" data-bs-parent="#topicsAccordion">
+                  <div class="accordion-body acc-body"><p data-i18n="topic6_desc">Estudiar el color no es solo seguir reglas: también implica confiar en la mirada entrenada para detectar qué combinación "funciona". El contraste, ya sea de tono, saturación o temperatura, es la herramienta clave para dar jerarquía visual y dirigir la atención dentro de una composición.</p></div>
+                </div>
+              </div>
+
+            </div><!-- /accordion -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       MI EXPERIENCIA EN MODA ECCI
+  =========================================================== -->
+  <section id="experiencia" class="experiencia-section section-pad">
+    <div class="container-custom">
+      <div class="section-header reveal">
+        <span class="eyebrow" data-i18n="exp_eyebrow">Vivencia personal</span>
+        <h2 data-i18n="exp_title">Mi experiencia en Moda ECCI</h2>
+        <p class="section-intro" data-i18n="exp_intro">Una reflexión sobre los aprendizajes, emociones y conexiones entre la industria creativa y el desarrollo de software.</p>
+      </div>
+
+      <!-- Bootstrap Cards — experiencia -->
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="exp-card reveal h-100">
+            <div class="exp-card-icon" style="background:var(--color-accent-red);">💡</div>
+            <h4 data-i18n="exp_card1_title">Aprendizajes</h4>
+            <p data-i18n="exp_card1_desc">Comprendí que el color no es decoración: es lenguaje. Sara Viloria mostró cómo cada decisión cromática comunica, guía y transforma la percepción del usuario, lo que aplica directamente al diseño de interfaces digitales.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="exp-card reveal h-100" style="animation-delay:0.1s">
+            <div class="exp-card-icon" style="background:var(--color-accent-yellow);">✨</div>
+            <h4 data-i18n="exp_card2_title">Lo que más llamó la atención</h4>
+            <p data-i18n="exp_card2_desc">El enfoque en Paul Klee como puente entre arte y diseño fue revelador. Ver cómo sus grillas de color anticiparon sistemas de diseño modernos fue una conexión inesperada y poderosa.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="exp-card reveal h-100" style="animation-delay:0.2s">
+            <div class="exp-card-icon" style="background:var(--color-accent-blue);">🎨</div>
+            <h4 data-i18n="exp_card3_title">Color en UX</h4>
+            <p data-i18n="exp_card3_desc">La conferencia reforzó que el color en interfaces no es estético sino funcional: define jerarquías, señala acciones y genera confianza. Un botón rojo y uno azul no son lo mismo, transmiten intenciones opuestas.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="exp-card reveal h-100" style="animation-delay:0.3s">
+            <div class="exp-card-icon" style="background:var(--color-dark);">🔗</div>
+            <h4 data-i18n="exp_card4_title">Industria creativa & Software</h4>
+            <p data-i18n="exp_card4_desc">Moda ECCI evidenció que diseño y código comparten raíz: ambos resuelven problemas humanos. Un desarrollador que entiende color, forma y emoción construye productos más completos y empáticos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pantone & Semiología -->
+      <div class="row g-4 mb-5">
+        <div class="col-lg-6">
+          <div class="pantone-block reveal">
+            <span class="eyebrow" data-i18n="pantone_eyebrow" style="color:var(--color-accent-yellow)">Sistema Pantone</span>
+            <h3 data-i18n="pantone_title">Lenguaje universal del color</h3>
+            <p data-i18n="pantone_p1">Pantone es un sistema estandarizado de identificación del color que permite a diseñadores, fabricantes y clientes de todo el mundo hablar el mismo idioma visual, sin importar el dispositivo o el medio de impresión.</p>
+            <p data-i18n="pantone_p2">En la industria de la moda, Pantone define las tendencias de cada temporada: un número como <strong>Pantone 19-4052 Classic Blue</strong> es comprensible para un taller en Bogotá y una fábrica en Milán por igual. En desarrollo web, esta precisión equivale al uso de variables de color en CSS o tokens de diseño.</p>
+            <div class="pantone-chips">
+              <div class="pantone-chip" style="background:#0F4C81"><span>19-4052</span><small>Classic Blue</small></div>
+              <div class="pantone-chip" style="background:#939597"><span>17-3911</span><small>Ultimate Gray</small></div>
+              <div class="pantone-chip" style="background:#F5DF4D; color:#1A1A2E"><span>13-0858</span><small>Illuminating</small></div>
+              <div class="pantone-chip" style="background:#B55A30"><span>18-1250</span><small>Burnt Sienna</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="semio-block reveal">
+            <span class="eyebrow" data-i18n="semio_eyebrow" style="color:var(--color-accent-blue)">Semiología visual</span>
+            <h3 data-i18n="semio_title">El color como signo</h3>
+            <p data-i18n="semio_p1">La semiología del color estudia cómo los colores funcionan como signos: cada tono porta un significante (lo que vemos) y un significado (lo que interpretamos). Esta interpretación varía según la cultura, el contexto y el medio.</p>
+            <p data-i18n="semio_p2">En diseño digital, comprender la semiología del color significa saber que el verde no siempre significa "go" ni el rojo siempre "error": depende del sistema de signos en que aparezca. Esa conciencia evita errores costosos de usabilidad.</p>
+            <div class="semio-table">
+              <div class="semio-row"><span class="semio-color" style="background:#E84855"></span><span data-i18n="semio_red">Rojo → Urgencia, error, pasión, peligro</span></div>
+              <div class="semio-row"><span class="semio-color" style="background:#F9DC5C"></span><span data-i18n="semio_yellow">Amarillo → Atención, energía, optimismo</span></div>
+              <div class="semio-row"><span class="semio-color" style="background:#3D5A80"></span><span data-i18n="semio_blue">Azul → Confianza, calma, tecnología</span></div>
+              <div class="semio-row"><span class="semio-color" style="background:#6FCF97"></span><span data-i18n="semio_green">Verde → Éxito, naturaleza, equilibrio</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reflexión personal + Modal Bootstrap -->
+      <div class="reflexion-block reveal">
+        <div class="reflexion-inner">
+          <span class="eyebrow" data-i18n="reflex_eyebrow" style="color:var(--color-accent-yellow)">Reflexión personal</span>
+          <h3 data-i18n="reflex_title">Cómo este espacio fortaleció mi formación</h3>
+          <p data-i18n="reflex_p">Participar en Moda ECCI me confirmó que la formación técnica no puede estar aislada de las humanidades y el arte. El desarrollo de software que construye experiencias para personas necesita comprender cómo esas personas perciben el mundo, y el color es uno de los canales más directos a la emoción y la cognición. Eventos como este son los que transforman programadores en diseñadores de experiencias.</p>
+          <button class="btn-secondary-custom" data-bs-toggle="modal" data-bs-target="#reflexionModal" data-i18n="reflex_btn">Leer reflexión completa</button>
+        </div>
+        <div class="reflexion-deco" aria-hidden="true">
+          <div class="mini-klee">
+            <div style="background:var(--color-accent-red)"></div>
+            <div style="background:var(--color-accent-yellow)"></div>
+            <div style="background:var(--color-accent-blue)"></div>
+            <div style="background:var(--color-dark)"></div>
+            <div style="background:var(--color-ink)"></div>
+            <div style="background:var(--color-bg); border:2px solid var(--color-ink)"></div>
+            <div style="background:var(--color-accent-yellow)"></div>
+            <div style="background:var(--color-accent-red)"></div>
+            <div style="background:var(--color-accent-blue)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Modal — Reflexión completa -->
+  <div class="modal fade" id="reflexionModal" tabindex="-1" aria-labelledby="reflexionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content modal-custom">
+        <div class="modal-header modal-header-custom">
+          <h5 class="modal-title" id="reflexionModalLabel" data-i18n="modal_title">Reflexión completa — Moda ECCI</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <p data-i18n="modal_p1">Asistir al evento Moda ECCI fue una experiencia que superó mis expectativas. Esperaba una charla sobre tendencias de moda, pero encontré una conferencia profunda sobre percepción, semiótica y comunicación visual que conecta directamente con mi carrera en desarrollo de software.</p>
+          <p data-i18n="modal_p2">Sara Viloria demostró que el color es un sistema estructurado, no una preferencia subjetiva. Cada decisión cromática en una interfaz digital lleva una carga semiótica que afecta cómo el usuario interpreta la información, confía en el sistema y actúa. Ignorar esto es construir con los ojos cerrados.</p>
+          <p data-i18n="modal_p3">La referencia a Paul Klee fue especialmente reveladora. Sus experimentos con grillas de color en los años 20 anticiparon conceptos que hoy usamos en CSS Grid y sistemas de tokens de diseño. El arte y la tecnología no son mundos separados: comparten la misma búsqueda de orden y significado en lo visual.</p>
+          <p data-i18n="modal_p4">Salí del evento con una convicción renovada: ser un buen desarrollador FrontEnd requiere alfabetización visual. No basta con saber escribir código; hay que saber leer imágenes, colores y formas con la misma fluidez. Moda ECCI me regaló un vocabulario que seguiré usando en cada proyecto.</p>
+        </div>
+        <div class="modal-footer modal-footer-custom">
+          <span style="font-family:var(--font-display); font-size:0.9rem; opacity:0.7" data-i18n="modal_author">Andres Felipe Guavita Cardenas — Universidad ECCI</span>
+          <button type="button" class="btn-primary-custom" data-bs-dismiss="modal" data-i18n="modal_close">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================================================
+       TEORÍA DEL COLOR
+  =========================================================== -->
+  <section id="teoria-color" class="color-theory section-pad">
+    <div class="container-custom">
+      <div class="section-header reveal">
+        <span class="eyebrow" data-i18n="color_eyebrow">Fundamentos visuales</span>
+        <h2 data-i18n="color_title">Círculo cromático y armonías</h2>
+        <p class="section-intro" data-i18n="color_intro" style="color:var(--color-dark)">El círculo cromático organiza los colores según su relación entre sí. A partir de él surgen las armonías: combinaciones que generan equilibrio, contraste o energía visual.</p>
+      </div>
+
+      <div class="wheel-wrapper reveal">
+        <div class="color-wheel" aria-label="Círculo cromático"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="harmony-card reveal">
+            <div class="harmony-swatches">
+              <span class="swatch" style="background:#E84855"></span>
+              <span class="swatch" style="background:#6FCF97"></span>
+            </div>
+            <h4 data-i18n="harmony1_title">Complementarios</h4>
+            <p data-i18n="harmony1_desc">Colores opuestos en el círculo. Generan alto contraste y energía visual.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="harmony-card reveal">
+            <div class="harmony-swatches">
+              <span class="swatch" style="background:#F9DC5C"></span>
+              <span class="swatch" style="background:#E84855"></span>
+              <span class="swatch" style="background:#6A4C93"></span>
+            </div>
+            <h4 data-i18n="harmony2_title">Análogos</h4>
+            <p data-i18n="harmony2_desc">Colores vecinos en el círculo. Crean composiciones armónicas y suaves.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="harmony-card reveal">
+            <div class="harmony-swatches">
+              <span class="swatch" style="background:#E84855"></span>
+              <span class="swatch" style="background:#F9DC5C"></span>
+              <span class="swatch" style="background:#3D5A80"></span>
+            </div>
+            <h4 data-i18n="harmony3_title">Triádicos</h4>
+            <p data-i18n="harmony3_desc">Tres colores equidistantes. Equilibrio vibrante y dinámico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       GLOSARIO TÉCNICO
+  =========================================================== -->
+  <section id="glosario" class="glosario-section section-pad">
+    <div class="container-custom">
+      <div class="section-header reveal">
+        <span class="eyebrow" data-i18n="gloss_eyebrow">Technical vocabulary</span>
+        <h2 data-i18n="gloss_title">Glossary / Glosario</h2>
+        <p class="section-intro" data-i18n="gloss_intro" style="color:#C9C9D6">Términos técnicos aprendidos durante el evento Moda ECCI · Technical terms learned during the Moda ECCI event.</p>
+      </div>
+
+      <!-- Search filter -->
+      <div class="gloss-search reveal">
+        <input type="text" id="glossSearch" class="gloss-input" data-i18n-placeholder="gloss_search_placeholder" placeholder="Buscar término... / Search term..." aria-label="Buscar en el glosario">
+      </div>
+
+      <div class="gloss-table-wrapper reveal">
+        <table class="gloss-table" id="glossTable">
+          <thead>
+            <tr>
+              <th data-i18n="gloss_th_en">English</th>
+              <th data-i18n="gloss_th_es">Español</th>
+              <th data-i18n="gloss_th_def">Definition / Definición</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Color Theory</td><td>Teoría del color</td><td data-i18n="gd1">Estudio de cómo los colores se relacionan entre sí y cómo son percibidos por el ojo humano / Study of how colors relate and are perceived.</td></tr>
+            <tr><td>Pantone</td><td>Pantone</td><td data-i18n="gd2">Sistema estandarizado de identificación del color usado globalmente en diseño e industria / Global standardized color identification system.</td></tr>
+            <tr><td>Color Wheel</td><td>Círculo cromático</td><td data-i18n="gd3">Representación circular de los colores que muestra sus relaciones cromáticas / Circular representation showing chromatic relationships.</td></tr>
+            <tr><td>Complementary Colors</td><td>Colores complementarios</td><td data-i18n="gd4">Colores opuestos en el círculo cromático que generan máximo contraste / Opposite colors on the wheel generating maximum contrast.</td></tr>
+            <tr><td>Hue</td><td>Matiz / Tono</td><td data-i18n="gd5">Atributo del color que lo diferencia de otros, como rojo, azul o verde / The attribute that differentiates one color from another, e.g., red, blue.</td></tr>
+            <tr><td>Saturation</td><td>Saturación</td><td data-i18n="gd6">Intensidad o pureza de un color; cuánto se aleja del gris / Intensity or purity of a color; how far from gray it is.</td></tr>
+            <tr><td>Value / Brightness</td><td>Valor / Brillo</td><td data-i18n="gd7">Luminosidad de un color, de oscuro a claro / Lightness of a color, from dark to light.</td></tr>
+            <tr><td>Semiology</td><td>Semiología</td><td data-i18n="gd8">Estudio de los signos y símbolos como elementos de comunicación visual / Study of signs and symbols as elements of visual communication.</td></tr>
+            <tr><td>Color Harmony</td><td>Armonía del color</td><td data-i18n="gd9">Combinación de colores que produce un efecto estético agradable y equilibrado / Color combination producing a pleasing, balanced aesthetic.</td></tr>
+            <tr><td>Pigment</td><td>Pigmento</td><td data-i18n="gd10">Sustancia que absorbe cierta luz y refleja un color específico / Substance that absorbs certain light and reflects a specific color.</td></tr>
+            <tr><td>Color Psychology</td><td>Psicología del color</td><td data-i18n="gd11">Estudio del efecto de los colores en el comportamiento y las emociones humanas / Study of color effects on human behavior and emotions.</td></tr>
+            <tr><td>Typography</td><td>Tipografía</td><td data-i18n="gd12">Arte y técnica de diseñar, componer y disponer tipos para comunicar mensajes visuales / Art and technique of designing and arranging type.</td></tr>
+            <tr><td>Visual Hierarchy</td><td>Jerarquía visual</td><td data-i18n="gd13">Organización de los elementos visuales según su importancia para guiar la mirada / Organization of visual elements by importance to guide the eye.</td></tr>
+            <tr><td>UX Design</td><td>Diseño de experiencia de usuario</td><td data-i18n="gd14">Proceso de crear productos que brinden experiencias significativas y relevantes a los usuarios / Creating products that provide meaningful user experiences.</td></tr>
+            <tr><td>Color Token</td><td>Token de color</td><td data-i18n="gd15">Variable de diseño que almacena un valor de color para uso consistente en un sistema / Design variable storing a color value for consistent system-wide use.</td></tr>
+            <tr><td>Contrast Ratio</td><td>Relación de contraste</td><td data-i18n="gd16">Medida de la diferencia de luminosidad entre dos colores, clave en accesibilidad web / Measure of luminosity difference between two colors, key for accessibility.</td></tr>
+            <tr><td>Warm / Cool Colors</td><td>Colores cálidos / fríos</td><td data-i18n="gd17">Clasificación emocional-perceptiva: cálidos (rojo, naranja, amarillo) evocan energía; fríos (azul, verde) transmiten calma / Perceptual classification: warm evoke energy, cool convey calm.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       SOSTENIBILIDAD Y ECONOMÍA CIRCULAR
+  =========================================================== -->
+  <section id="sostenibilidad" class="sustain-section section-pad">
+    <div class="container-custom">
+      <div class="section-header reveal">
+        <span class="eyebrow" data-i18n="sust_eyebrow">Reflexión final</span>
+        <h2 data-i18n="sust_title">Tecnología, sostenibilidad y economía circular</h2>
+        <p class="section-intro" data-i18n="sust_intro">La industria de la moda y el desarrollo de software comparten responsabilidades ambientales y sociales que el diseño puede transformar.</p>
+      </div>
+
+      <!-- Bootstrap Cards sostenibilidad -->
+      <div class="row g-4 mb-5">
+        <div class="col-sm-6 col-lg-4">
+          <div class="sustain-card reveal h-100">
+            <div class="sustain-icon">♻️</div>
+            <h4 data-i18n="sust_c1_title">Reducción de residuos</h4>
+            <p data-i18n="sust_c1_desc">El diseño digital reduce la necesidad de materiales físicos: catálogos, muestras y presentaciones pueden existir en pantallas en lugar de papel, disminuyendo el desperdicio generado por la industria de la moda.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="sustain-card reveal h-100" style="animation-delay:0.1s">
+            <div class="sustain-icon">🔄</div>
+            <h4 data-i18n="sust_c2_title">Reutilización de componentes</h4>
+            <p data-i18n="sust_c2_desc">Los sistemas de diseño reutilizables, como los basados en tokens de color (Pantone digital), permiten crear múltiples productos con menos recursos, análogo al principio de economía circular.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="sustain-card reveal h-100" style="animation-delay:0.2s">
+            <div class="sustain-icon">⚡</div>
+            <h4 data-i18n="sust_c3_title">Optimización de recursos</h4>
+            <p data-i18n="sust_c3_desc">El código eficiente consume menos energía en servidores. Optimizar imágenes, reducir peticiones HTTP y usar técnicas lazy loading son prácticas de sostenibilidad digital que tienen impacto real en el ambiente.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="sustain-card reveal h-100" style="animation-delay:0.1s">
+            <div class="sustain-icon">🌿</div>
+            <h4 data-i18n="sust_c4_title">Producción sostenible</h4>
+            <p data-i18n="sust_c4_desc">La conferencia mostró cómo pigmentos naturales están volviendo a la moda: la industria textil busca alternativas biodegradables que reduzcan la carga química en agua y suelos, uniendo tradición y tecnología.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="sustain-card reveal h-100" style="animation-delay:0.2s">
+            <div class="sustain-icon">🌍</div>
+            <h4 data-i18n="sust_c5_title">Impacto ambiental positivo</h4>
+            <p data-i18n="sust_c5_desc">Los eventos académicos como Moda ECCI crean conciencia: al conectar diseñadores con desarrolladores, se construyen soluciones digitales que promueven prácticas de consumo responsable y trazabilidad en la cadena textil.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="sustain-card sustain-card--highlight reveal h-100" style="animation-delay:0.3s">
+            <div class="sustain-icon">💻</div>
+            <h4 data-i18n="sust_c6_title">Responsabilidad digital</h4>
+            <p data-i18n="sust_c6_desc">Cada decisión de diseño tiene impacto: un sitio accesible incluye más personas, un código limpio dura más tiempo, y una paleta bien elegida evita retrabajos costosos. La responsabilidad organizacional empieza en el pixel.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap Carousel — citas -->
+      <div class="sustain-carousel-wrapper reveal">
+        <h3 class="sustain-quote-heading" data-i18n="sust_quotes_title">Principios que conectan diseño y sostenibilidad</h3>
+        <div id="sustainCarousel" class="carousel slide carousel-custom" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <blockquote class="sustain-quote">
+                <p data-i18n="quote1">"El color no es un lujo del diseño. Es la primera información que el cerebro procesa. Usarlo con conciencia es usarlo con responsabilidad."</p>
+                <cite>— Sara Viloria, Moda ECCI</cite>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="sustain-quote">
+                <p data-i18n="quote2">"La economía circular en moda no es solo sobre telas. Es sobre ideas que se reutilizan, sistemas que perduran y colores que cuentan historias sin agotar recursos."</p>
+                <cite>— Reflexión académica, ECCI</cite>
+              </blockquote>
+            </div>
+            <div class="carousel-item">
+              <blockquote class="sustain-quote">
+                <p data-i18n="quote3">"Un buen sistema de diseño es sostenible por definición: sus componentes se reutilizan, escalan y evolucionan sin generar desperdicio."</p>
+                <cite>— Principio FrontEnd ADSO</cite>
+              </blockquote>
+            </div>
+          </div>
+          <button class="carousel-control-prev carousel-btn" type="button" data-bs-target="#sustainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next carousel-btn" type="button" data-bs-target="#sustainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators carousel-dots">
+            <button type="button" data-bs-target="#sustainCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#sustainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#sustainCarousel" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       GALERÍA
+  =========================================================== -->
+  <section id="galeria" class="gallery-section section-pad">
+    <div class="container-custom">
+      <div class="section-header reveal">
+        <span class="eyebrow" data-i18n="gallery_eyebrow">Registro fotográfico</span>
+        <h2 data-i18n="gallery_title">Galería de la conferencia</h2>
+        <p class="section-intro" data-i18n="gallery_intro" style="color:#C9C9D6">Una selección de momentos capturados durante la charla de Sara Viloria en la Universidad ECCI, sede Centro.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <!-- Las 15 imágenes se generan dinámicamente desde app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <img src="" alt="">
+      <button class="lightbox-prev" aria-label="Anterior">&#8249;</button>
+      <button class="lightbox-next" aria-label="Siguiente">&#8250;</button>
+      <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ===========================================================
+       FOOTER
+  =========================================================== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#top" class="logo">Moda<span>ECCI</span></a>
+        <p data-i18n="footer_brand_desc">Cobertura visual de la conferencia de color realizada en la Universidad ECCI, sede Centro, Bogotá.</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#sobre-evento" data-i18n="nav_about">El evento</a></li>
+          <li><a href="#experiencia" data-i18n="nav_experience">Mi experiencia</a></li>
+          <li><a href="#glosario" data-i18n="nav_glossary">Glosario</a></li>
+          <li><a href="#sostenibilidad" data-i18n="nav_sustain">Sostenibilidad</a></li>
+          <li><a href="#galeria" data-i18n="nav_gallery">Galería</a></li>
+        </ul>
+      </div>
+      <div class="footer-credit">
+        <p data-i18n="footer_credit_label">Documentado por</p>
+        <strong>Andres Felipe Guavita Cardenas</strong>
+        <span class="footer-badge" data-i18n="footer_badge">SENA · ADSO</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer_rights">Universidad ECCI · Sede Centro, Bogotá</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
